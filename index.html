@@ -97,6 +97,24 @@
     letter-spacing: .3px;
   }
 
+  .banner-title {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 8px;
+  letter-spacing: 0.6px;
+}
+
+.banner-sub {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #ccc;
+  margin: 0 0 22px;
+  line-height: 1.6;
+}                             /*두번째 화면
+
   /* 숨김 제어 */
   [hidden]{ display: none !important; }
 </style>
@@ -113,7 +131,7 @@
       </p>
 
       <form id="answerForm" class="row" autocomplete="off">
-        <input id="answerInput" type="text" placeholder="암호를 입력하세요 (예: FAKE)" required />
+        <input id="answerInput" type="text" placeholder="암호는..!!" required />
         <button type="submit">제출</button>
       </form>
       <!-- 안내문 필요하면 여기에 추가 가능 -->
@@ -123,27 +141,29 @@
   <!-- 두 번째 화면 (정답 시) -->
   <section id="screen2" class="screen" hidden>
     <div class="center">
+        <!-- ✅ 큰 제목 + 작은 본문 추가 -->
+        <h1 class="banner-title"><br>♧®당Áü근♧ú당♣근♧<br></h1>
+        <p class="banner-sub">
+            ☞ 무®ÀÚ ±úÁü Å×½ºÆ립니다.<br>
+            ☞ 맡ü Å½º십시오. 다 Ú ±ú.<br>
+            ☞ 절무 ±ú Ú ±ú½망시켜 드ú니다.<br>
+        </p>
+
       <div class="gallery">
         <!-- banner1 ~ banner5 각각 제목 + 이미지 -->
         <div class="card">
-          <h2 class="title">banner1</h2>
+
           <img src="static/banner1.png" alt="banner1">
         </div>
         <div class="card">
-          <h2 class="title">banner2</h2>
           <img src="static/banner2.png" alt="banner2">
         </div>
         <div class="card">
-          <h2 class="title">banner3</h2>
           <img src="static/banner3.png" alt="banner3">
         </div>
         <div class="card">
-          <h2 class="title">banner4</h2>
           <img src="static/banner4.png" alt="banner4">
         </div>
-        <div class="card">
-          <h2 class="title">banner5</h2>
-          <img src="static/banner5.png" alt="banner5">
         </div>
       </div>
     </div>
